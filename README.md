@@ -39,6 +39,7 @@ value.
 
 
 Final Regression Code
+
 In this section, we load our images from the directory. Then we rescale the pixel intensities of images from (0,1). We rescale the input angle between
 (0,1). We divide the training and testing data in 75% and 25% respectively. Our validation data is the same as our training dataset.
 (a) We have used the image size as 64,64,3(height,width,depth).
