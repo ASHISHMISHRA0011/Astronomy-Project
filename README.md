@@ -1,15 +1,15 @@
 # Isoplanetsim-Astronomy-
 
-##Introduction
+## Introduction
 We are using the convolutional neural network to determine the relationship between the orientation of an ellipse just by giving images as input.
 
 
-##Data
+## Data
 We are training our model using simulated data. We have used ellipse of skimage.draw module in python. We have generated the ellipses at different angles.
 Each angle is determined using x-axis as zero slope angle. We have generated 900 images in which the angle of the ellipses increases iteratively by 0.2°. Each one isa jpeg image having a black background and white filled ellipse.
 
 
-##Model
+## Model
 1. We have used filters of size 16,32,64. After iteration through each layer these
 filters increases. The purpose of these filters is to find the feature values in
 the input data.
@@ -38,7 +38,7 @@ which are not changing our output much.
 value.
 
 
-##Final Regression Code
+## Final Regression Code
 
 In this section, we load our images from the directory. Then we rescale the pixel intensities of images from (0,1). We rescale the input angle between
 (0,1). We divide the training and testing data in 75% and 25% respectively. Our validation data is the same as our training dataset.
