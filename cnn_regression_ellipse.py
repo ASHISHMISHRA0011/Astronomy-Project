@@ -56,7 +56,7 @@ model.compile(loss="mean_squared_error", optimizer=opt, metrics = ['mean_squared
 print("[INFO] training model...")
 history = model.fit(x=trainImagesX, y=trainY, 
     validation_data=(testImagesX, testY),
-    epochs=100, batch_size= 64)
+    epochs=100, batch_size= 16)
 #%%
 # make predictions on the testing data
 print("[INFO] predicting ellipse angles..")
