@@ -2,7 +2,11 @@
 
 ## Introduction
 We are using the convolutional neural network to determine the relationship between the orientation of an ellipse just by giving images as input.
-
++ cnn_regression_ellipse.py: The implementation of model over the problem.
++ datasets_ellipse.py: The ellipse images datasets imported.
++ ellipse-skimage.py: The code for generation of ellipse images.
++ models_ellipse.py: The model created for prediction of angle of ellipse.
++ labels.txt: The labels or output, required for prediction.
 
 ## Data
 We are training our model using simulated data. We have used ellipse of skimage.draw module in python. We have generated the ellipses at different angles.
