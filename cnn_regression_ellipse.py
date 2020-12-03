@@ -12,12 +12,7 @@ import argparse
 import locale
 import os
 
-# construct the argument parser and parse the arguments
-# ap = argparse.ArgumentParser()
-# ap.add_argument("-d", "--dataset", type=str, required=True,
-# 	help="path to input dataset of house images")
-# args = vars(ap.parse_args())
-    
+# Mention your parent directory location
 loc="/home/ashish/MACHINE LEARNING/ajay"
 # construct the path to the input .txt file that contains information
 # and then load the dataset
@@ -56,7 +51,7 @@ model.compile(loss="mean_squared_error", optimizer=opt, metrics = ['mean_squared
 print("[INFO] training model...")
 history = model.fit(x=trainImagesX, y=trainY, 
     validation_data=(testImagesX, testY),
-    epochs=100, batch_size= 16)
+    epochs=200, batch_size= 64)
 #%%
 # make predictions on the testing data
 print("[INFO] predicting ellipse angles..")
@@ -91,8 +86,10 @@ epoch_count = range(1, len(training_loss) + 1)
 # Visualize loss history
 plt.plot(epoch_count, training_loss, 'r--')
 plt.plot(epoch_count, test_loss, 'b-')
+plt.title("Loss vs Epoch")
 plt.legend(['Training Loss', 'Test Loss'])
 plt.xlabel('Epoch')
 plt.ylabel('Loss')
+plt.savefig("f_cos")
 plt.show();
 
