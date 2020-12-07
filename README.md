@@ -48,6 +48,6 @@ In this section, we load our images from the directory. Then we rescale the pixe
 (0,1). We divide the training and testing data in 75% and 25% respectively. Our validation data is the same as our training dataset.
 * We have used the image size as 64,64,3(height,width,depth).
 * We have used the loss function as squared mean error and the metric(which determines the accuracy or loss in each step) as the squared mean error. Particularly this loss function and metric gives us the minimum loss and maximum accuracy.
-* We have used the Adam optimizer with learning rate \(10^{−3}\) and batch size about 8 or 16 or 32. We are running the whole program for 200
+* We have used the Adam optimizer with learning rate \[10^{−3}\] and batch size about 8 or 16 or 32. We are running the whole program for 200
 epochs.
 * Finally we have calculated the error on our own that comes around to be 10%.
