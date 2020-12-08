@@ -66,5 +66,5 @@ epochs.
 * Finally we have calculated the error on our own that comes around to be 10%.
 
 ## Authors
-Ashish Mishra: [a link](ashish.mishra@niser.ac.in)
-Ajay Dev:[a link](ajay.dev@niser.ac.in)
+Ashish Mishra: [ashish.mishra@niser.ac.in](ashish.mishra@niser.ac.in)
+Ajay Dev:[ajay.dev@niser.ac.in](ajay.dev@niser.ac.in)
