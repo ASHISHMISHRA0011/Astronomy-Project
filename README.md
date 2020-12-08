@@ -8,6 +8,19 @@ We are using the convolutional neural network to determine the relationship betw
 + models_ellipse.py: The model created for prediction of angle of ellipse.
 + labels.txt: The labels or output, required for prediction.
 
+## Implementation:
+# Step 1: Creation of dataset
++ Use ellipse_skimage.py to create the ellipse images as well as the labels i.e. 'z' defined in our code.You can choose any other desired function for 'z' in our code. 
++ After running ellipse_skimage.py you'll a get a number of ellipse images and a file named 'label.txt'.
+# Step 2: Data Loading defined functions:
++ Run dataset_ellipse.py so that you can define the function for loading images as well as loading labels.
++ These defined functions will be used later in cnn_regression_ellipse.py
+# Step 3: Define the model
++ Run models_ellipse.py file to create an image regression model.
++ We will only need create_cnn in this file.
+# Step 4: Train and Test the model
++ Important: Please define the directory first in cnn_regression_ellipse.py, for exmaple I have defined the parent directory as ' loc="/home/ashish/MACHINE LEARNING/ajay" '
++ Now run the program and you will get results of mean error, standard deviation of error and the loss with each epoch.
 ## Data
 We are training our model using simulated data. We have used ellipse of skimage.draw module in python. We have generated the ellipses at different angles.
 Each angle is determined using x-axis as zero slope angle. We have generated 900 images in which the angle of the ellipses increases iteratively by 0.2°. Each one isa jpeg image having a black background and white filled ellipse.
