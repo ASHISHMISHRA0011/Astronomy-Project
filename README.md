@@ -1,4 +1,4 @@
-# Isoplanetsim-Astronomy-
+## Isoplanetsim-Astronomy-
 
 ## Introduction
 We are using the convolutional neural network to determine the relationship between the orientation of an ellipse just by giving images as input.
@@ -9,16 +9,16 @@ We are using the convolutional neural network to determine the relationship betw
 + labels.txt: The labels or output, required for prediction.
 
 ## Implementation:
-# Step 1: Creation of dataset
+### Step 1: Creation of dataset
 + Use ellipse_skimage.py to create the ellipse images as well as the labels i.e. 'z' defined in our code.You can choose any other desired function for 'z' in our code. 
 + After running ellipse_skimage.py you'll a get a number of ellipse images and a file named 'label.txt'.
-# Step 2: Data Loading defined functions:
+### Step 2: Data Loading defined functions:
 + Run dataset_ellipse.py so that you can define the function for loading images as well as loading labels.
 + These defined functions will be used later in cnn_regression_ellipse.py
-# Step 3: Define the model
+### Step 3: Define the model
 + Run models_ellipse.py file to create an image regression model.
 + We will only need create_cnn in this file.
-# Step 4: Train and Test the model
+### Step 4: Train and Test the model
 + Important: Please define the directory first in cnn_regression_ellipse.py, for exmaple I have defined the parent directory as ' loc="/home/ashish/MACHINE LEARNING/ajay" '
 + Now run the program and you will get results of mean error, standard deviation of error and the loss with each epoch.
 ## Data
