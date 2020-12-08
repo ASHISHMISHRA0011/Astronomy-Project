@@ -1,4 +1,4 @@
-## Isoplanetsim-Astronomy-
+## Machine Learning Project-Astronomy
 
 ## Introduction
 We are using the convolutional neural network to determine the relationship between the orientation of an ellipse just by giving images as input.
